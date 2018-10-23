@@ -8,16 +8,16 @@ module.exports = function getZerosCount(number, base) {
 
   while (startDivider < base) {
     if (base % startDivider == 0) {
-      simpleMultiplier[i] = startDivider;
-      i++;
-      base = base / startDivider;
-    } else {
-      startDivider++;
+        simpleMultiplier[i] = startDivider;
+          i++;
+           base = base / startDivider;
+    }        else {
+                     startDivider++;
     }
   };
   simpleMultiplier[i] = startDivider;
 
-  let exponents = {};
+  let exponents = [];
   for (let i = 0; i < simpleMultiplier.length; i++) {
     let x = simpleMultiplier[i];
     if (exponents[x] = exponents[x]) {
